@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>usando links externos</h1>
+    <p>Você pode acessar o <a href="https://github.com/BabiCabral">meu repositório público no GitHub</a></p>
+    <p>Você também pode assistir essa <a href="https://www.youtube.com/watch?time_continue=457&v=LeOVXQDsAIY&embeds_euri=https%3A%2F%2Fwww.cursoemvideo.com%2F&source_ve_path=MjM4NTE&feature=emb_title">aula gratuita</a> no Youtube</p>
+
+    <p> Para o usuario não sair da Navegação do seu site e abrir os links externos em uma nova aba, usar o target _blank e o rel external.
+    Ex:</p>
+    <p>Você pode acessar o <a href="https://github.com/BabiCabral" target="_blank" rel="external">meu repositório público no GitHub</a></p>
+    <p>Você também pode assistir essa <a href="https://www.youtube.com/watch?time_continue=457&v=LeOVXQDsAIY&embeds_euri=https%3A%2F%2Fwww.cursoemvideo.com%2F&source_ve_path=MjM4NTE&feature=emb_title" target="_blank" rel="external">aula gratuita</a> no Youtube</p>
+
+    <h1>Links Internos</h1>
+    <p>Esta é a primeira do site. Se você quiser também pode acessar a minha <a href="pagina2.html" rel="next" target="_self">segunda página</a> </p>  <!--Atalho para acessar as páginas rapidamente no VScode: ctrl + espaço-->
+    <p>Você também pode acessar a <a href="Noticias/pagina3.html" rel="next" target="_self">nossa página de notícias</a></p>
+
+    <h1>Links para downloads</h1>
+        <ul>
+            <li><a href="Livro/10 - Ligações em toda parte.pdf" download="Livro/10 - Ligações em toda parte.pdf" type="application/pdf ">Baixar Link em PDF</a></li>
+            <li><a href="Livro/10 - Ligações em toda parte.zip" download="Livro/10 - Ligações em toda parte.zip" type="application/zip">Livro compactado em ZIP</a></li>
+        </ul>
+
+
+    <p>Outro atributo bem útil da tag âncora e´o reflang, que permite indicar qual é´o idioma principal do site para onde o link está desviando o fluxo de navegação. Isso vai permitir avisar ao navegador e a softwares de tradução como lidar caso o visitante opte por traduzir automaticamente os conteúdos.</p>
+
+    <p>Para acessar o <a href="https://www.w3schools.com/html/" hreflang="en" target="_blank" ref="external"> site da W3Schools (em inglês) </a></p>
+
+    <p>MAis atributos:
+        <ul type="disc">
+            <li><code>_blank:</code> vai abrir o link em uma nova anela em branco</li>
+            <li><code>_self</code> vai abrir o link na janela ou frame atual (padrão)</li>
+            <li><code>_top</code> vai desfazer todos os frames e abrir o destino no navegador completo</li>
+            _parent similar ao uso do _top em uma referência à janela mãe
+            <li><code>nome-do-frame</code> caso estea usando frames, indicar o nome da janela a abrir</li>
+        </ul>
+
+        <p>Obs: o nome-do-frame" ´é um tecnica em desuso. Utilizamos mais o <code>_blank</code> e o <code>_self</code></p>
+
+        <a href="pagina2.html" target="_self"> Continuar navegando no site</a>
+
+        <a href="https://github.com/BabiCabral" target="_blank"> abrir perfil GitHub em nova janela</a>
+    </p>
+
+
+</body>
+</html>

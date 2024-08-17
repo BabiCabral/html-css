@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title> <!--Divs semânticas-->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 0, 0);
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(190, 190, 190);
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        nav{
+            background-color: black;
+            padding: 10px;
+           box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.579);
+        }
+        nav > a {
+            text-decoration: none;
+            color: azure;
+            font-weight: bolder;
+            margin:30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: rgb(217, 217, 217);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 30px;
+        }
+        article {
+            background-color :rgb(125, 125, 125);
+            padding: 5px;
+        }
+        article > aside {
+            background-color:rgb(93, 93, 93);
+        }
+        footer {
+            background-color: antiquewhite;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 4px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho do body-->
+        <h1>Meu site</h1>
+        <nav> <!--navegação-->
+            <a href="http://">Link 1</a>
+            <a href="http://">Link 2</a>
+            <a href="http://">Link 3</a>
+            <a href="http://">Link 4</a>
+            <a href="http://">Link 5</a>
+        </nav>
+    </header>
+    <main> <!--Conteudo principal do body-->
+        <section id="assuntos">
+            <p> Arte, Moda e Tecnologia</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cumque nemo dignissimos eius perspiciatis beatae sapiente magni magnam praesentium, neque, repellendus mollitia fugiat aut natus atque pariatur quidem porro excepturi?
+                <aside>
+                    Artigo escrito por Fulano de tal
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>  <!--Nao precisa ser nessa ordem, mas é um exemplo-->
+    </main>
+    <footer> <!--rodapé do body-->
+        Desenvolvido por Bárbara Cabral
+    </footer>
+    <div id="bola">
+    </div>
+</body>
+</html>

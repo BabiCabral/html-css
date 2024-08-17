@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* 
+            Simbologias no CSS: para criar nossos seletores personalizados
+
+            #  =  Id     (é um identidicador. Serve para diferenciar uma tag, possibilitando uma formatação diferente das outras tags de mesma categoria. ex:h1,h2,p ...)
+            .  =  Class  (identifica mais de uma tag/elemento, também possibilitando suas formatações) (obs: dê nomes para as classes de acordo com sua funcionalidade e nao por forma ou cor) (obs2: dá pra adicionar mais de uma classe a 1 tag ou elemento. ex: <h2 class= "intermediario" "destaque"> CSS intermediario </h2>)
+            :  =  Pseudo-class  (são palavras chaves adicionadas ao seletor que especificam um estado especial do elemento ou classe selecionada. Elas os afetam como um todo)
+            :: =  Pseudo-element  (São palavras chaves adicionadas à um seletor que permite que você estilize uma parte específica do elemento selecionado. Ex: p:: first-letter -> estiliza a primeira letra de todo paragrafo <p>)
+            >  =  Children  (elemento que herda/é filho de outro. ex: div > p -> paragrafo que está dentro da div)
+        */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red ;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow ;
+        }
+
+        .especial {
+            background-color: yellow;
+            background-color: beige;
+        }
+
+        .especial::before{
+            content: ' ✦ ' ;
+        }
+
+        .especial::after{
+            content: ' ✦ ' ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/babicabral">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/">Site do Cursoemvideo</a></li>
+    </ul>
+</body>
+</html>

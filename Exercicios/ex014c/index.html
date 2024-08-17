@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'ScarletHeart';
+            src: url('ScarletHeart.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+        } 
+        /*
+        Tipos de format()
+        -opentype (otf)
+        -truetype (ttf)
+        -embedded (ttf)
+        -truetpe-aat (Apple Advanced Typography)
+        -svg
+        */
+        body{
+            font-family: 'ScarletHeart';
+        }
+
+        h1 {
+            font-family: 'ScarletHeart';
+            font-size: 3em; /*(ou 48px)*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi distinctio alias cum ab laudantium atque ipsum vel voluptates sapiente praesentium veniam sed, fugit aliquam rem eaque ad dicta natus animi!</p>
+</body>
+</html>
