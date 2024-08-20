@@ -22,7 +22,7 @@
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif ;
     --fonte-destaque: 'Bebas Neue';
-    --fonte-android: 'Android', cursive;
+    --fonte-android: 'Android', sans-serif;
 }
 
 body {
@@ -75,7 +75,7 @@ nav > a {
     border-radius: 5px;
     text-decoration: none; /*pra tirar o sublinhado//decoração dos links*/
     font-weight: bold;
-    transition-duration: .5s;
+    transition-duration: .5s; /*tempo que a transiçao vai durar ao passar o mouse em cima*/
 }
 
 nav > a:hover { /*pra mudar quando passar o mouse em cima*/
