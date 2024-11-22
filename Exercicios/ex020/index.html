@@ -14,19 +14,17 @@
             border-collapse: collapse;
         }
 
-        tr.color {
-            background-color: gray;
-        }
-
         td {
             border: 1px solid black;
             padding: 10px;
-            text-align: center;
+            text-align: center; /*alinhamento horizontal*/
+            vertical-align: middle; /*alinhamento vertical*/
         }
 
-        td.result {
-            background-color: rgb(197, 51, 51);
+        .numero {
+            text-align: right;
         }
+
     </style>
 </head>
 <body>
@@ -35,7 +33,7 @@
   <!-- Hierarquia de tabelas:
         Table = Tabela
             Table Row = Linha de tabela
-                Table header = cabealho de tabela
+                Table header = cabeçalho de tabela
                 Table data = dado de tabela -->
 
     <table>
@@ -43,25 +41,21 @@
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
-            <td class="result">R1</td>
         </tr>
         <tr class="color">
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
-            <td class="result">R2</td>
         </tr>
         <tr>
             <td>A3</td>
             <td>B3</td>
             <td>C3</td>
-            <td class="result">R3</td>
         </tr>
         <tr class="color">
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
-            <td class="result">R4</td>
         </tr>
     </table>
 
