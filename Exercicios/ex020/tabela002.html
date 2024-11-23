@@ -4,8 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        .nome {
+            font-weight: bolder;
+        }
+    </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TH, TD
+            TBODY
+                TR, TH, TD
+            TFOOT
+                TR, TH, TD
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>população</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="nome">São Paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td class="nome">Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td class="nome">Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td class="nome">Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td class="nome">Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td class="nome">Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>	
+            </tr>
+            <tr>
+                <td class="nome">Pernambuco</td>
+                <td class="num">9 539 029</td>	
+            </tr>
+            <tr>
+                <td class="nome">Ceará</td>
+                <td class="num">9 233 656</td>	
+            </tr>
+            <tr>
+                <td class="nome">Pará</td>
+                <td class="num">8 664 306</td>
+            </tr>
+            <tr>
+                <td class="nome">Santa Catarina</td>
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td class="nome">Goiás</td>
+                <td class="num">7 350 483</td>
+            </tr>
+            <tr>
+                <td class="nome">Maranhão</td>
+                <td class="num">7 010 960</td>	
+            </tr>
+            <tr>
+                <td class="nome">Amazonas</td>
+                <td class="num">4 281 209</td>
+            </tr>
+            <tr>
+                <td class="nome">Paraíba</td>
+                <td class="num">4 145 040</td>	
+            </tr>
+            <tr>
+                <td class="nome">Espírito Santo</td>
+                <td class="num">4 102 129</td>
+            </tr>
+            <tr>
+                <td class="nome">Mato Grosso</td>
+                <td class="num">3 836 399</td>	
+            </tr>
+            <tr>
+                <td class="nome">Rio Grande do Norte</td>
+                <td class="num">3 446 071</td>
+            </tr>
+            <tr>
+                <td class="nome">Piauí</td>
+                <td class="num">3 375 646</td>	
+            </tr>
+            <tr>
+                <td class="nome">Alagoas</td>
+                <td class="num">3 220 104</td>
+            </tr>
+            <tr>
+                <td class="nome">Distrito Federal</td>
+                <td class="num">2 982 815</td>
+            </tr>
+            <tr>
+                <td class="nome">Mato Grosso do Sul</td>
+                <td class="num">2 901 895</td>
+            </tr>
+            <tr>
+                <td class="nome">Sergipe</td>
+                <td class="num">2 291 077</td>
+            </tr>
+            <tr>
+                <td class="nome">ondônia</td>
+                <td class="num">1 746 227</td>	
+            </tr>
+            <tr>
+                <td class="nome">Tocantins</td>
+                <td class="num">1 577 342</td>
+            </tr>
+            <tr>
+                <td class="nome">Acre</td>
+                <td class="num">880 631</td>
+            </tr>
+            <tr>
+                <td class="nome">Amapá</td>
+                <td class="num">802 837</td>	
+            </tr>
+            <tr>
+                <td class="nome">Roraima</td>
+                <td class="num">716 793</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td class="num"><strong>212 583 720</strong></td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
