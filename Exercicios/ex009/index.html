@@ -1,118 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vídeos comHTML5</title>
 </head>
 <body>
-    <h1>Trabalhando com listas</h1>
-    <h2>Listas Ordenadas</h2>
-    <ol>
-        <li>Acordar</li>
-        <li>Ligar para o João</li>
-        <li>Tomar café</li>
-        <li>Escovar os dentes</li>
-    </ol>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="560" poster="Imagens/capa.jpg" controls>
+        <source src="midia/meuvideo.mp4" type="video/mp4">
+        <source src="midia/meuvideo.m4v" type="video/mp4">
+        <source src="midia/meuvideo.webm" type="video/webm">
+        <source src="midia/meuvideo.ogg" type="video/ogg">
+        <p>Seu computador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
 
-   <h3>Parametro Type:</h3>
-   <p>Podemos personalizar as listas mudando sua formatação com o parâmetro type. Temos 5 tipos de listas: 1, A, a, I, i.</p>
-
-   <p>1 - 1, 2, 3, 4, 5...
-      A - A, B, C, D, E... 
-      a - a, b, c, d, e... 
-      I - I, II, III, IV, V... 
-      i - i, ii, iii, iv, v... 
-   </p>
-   
-   <p>ex1:</p>
-   <ol type="1" start="1">  <!--o start vai mostrar a partir de onde irá começar a enumeração -->
-        <li>Acordar
-        <li>Ligar para o João
-        <li>Tomar café
-        <li>Escovar os dentes
-        <li>Ir pta faculdade
-        <li>Almoçar
-   </ol> 
-
-   <p>Ex2:</p>
-   <ol type="I">
-        <li>Acordar
-        <li>Ligar para o João
-        <li>Tomar café
-        <li>Escovar os dentes
-        <li>Ir pta faculdade
-        <li>Almoçar
-    </ol> 
-
-    <h2>Listas Não Ordenadas</h2>
-    <ul type="square">
-        <li>Pão</li>
-        <li>Leite</li>
-        <li>Tomate</li>
-        <li>Manteiga</li>
-        <li>Arroz</li>
-        <li>Feijão</li>   
-    </ul>
-
-    <h3>Parametro Type:</h3>
-   <p>Nas listas não ordenadas temos 3 tipos de "Type": disc (bolinha preta, circle (circulo aberto), square ( quadrado pintado) </p>
-
-   <h2>Minhas Linguagens favoritas</h2>
-   <ol>
-        <li>Antigas</li>
-        <ol type="a">
-           <Li>Clipper</Li>
-           <li>Visual Basic</li>
-           <li>Fortan</li>
-           <li>Delphin</li>
-        </ol>
-        <li>Novas</li>
-        <ol type="a" start="5">   <!--o start conta como elemento. NEsse caso, contando a partir do quinto elemento, que seria a letra e.-->
-            <li>PHP</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>Kotlin</li>
-        </ol>
-
-        <!--Atalho para mudar varios caracteres: coloca o curso sobre a letra, aperta alt e seleciona os outros iguais. deleta e acrescenta o que quiser em todos de uma vez só.-->
-
-        <h2>Meus jogos favoritos</h2>
-        <ol>
-            <li>NES</li>
-            <ul type="square">
-                <li>Mario Bros</li>
-                <ul type="circle">
-                    <li>Mario Bros 3</li>
-                    <li>Mario: Lost Levels</li>
-                </ul>
-                <li>Ninja Gaiden</li>
-            </ul>
-            <li>SNES</li>
-            <ul type="square">
-                <li>Mario</li>
-                <li>Donke Kong</li>
-            </ul>
-            <li>Playstation</li>
-            <ul type="square">
-                <li>Final Fantasy</li>
-                <li>Castlevania</li>
-            </ul>
-            <!-- As listas Ordenadas e Não ordenadas podem ser misturadas em vários niveis-->
-
-        <h2>Listas de Definições</h2>
-        <dl> <!--dl: Lista de definição-->
-            <dt>HTML</dt> <!--dt: Termo-->
-            <dd>Linguagem de marcaão para a criação do conteúdo de um site</dd> <!--dd: Descrição-->
-            <dt>CSS</dt>
-            <dd>Linguagem de marcação para a criação do design de um site.</dd>
-            <dt>JavaScript</dt>
-            <dd>Linguagem de Programação para a criação de interatividade de um site.</dd>
-        </dl>
-        </ol>
-   </ol>
-
-
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </body>
 </html>
